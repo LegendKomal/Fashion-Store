@@ -64,7 +64,9 @@ export default function ProductDetailScreen({ route, navigation }) {
   };
 
   const handleBuyNow = () => {
-    addToCart(product);
+    if (quantity === 0) {
+      addToCart(product);
+    }
     navigation.navigate("Cart");
   };
 
@@ -100,7 +102,6 @@ export default function ProductDetailScreen({ route, navigation }) {
         </View>
 
         <View style={styles.body}>
-          
           <Text style={styles.title}>{product.title}</Text>
 
           <View style={styles.priceRow}>
@@ -153,7 +154,7 @@ export default function ProductDetailScreen({ route, navigation }) {
         ) : (
           <TouchableOpacity
             style={styles.goToCartBtn}
-            onPress={() => navigation.navigate("Cart")}
+            onPress={() => navigation.replace('Cart')}
           >
             <Ionicons name="cart" size={20} color="#6366f1" />
             <Text style={styles.cartFooterText}>Go to Cart ({quantity})</Text>

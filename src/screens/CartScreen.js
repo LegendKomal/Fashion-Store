@@ -67,7 +67,7 @@ export default function CartScreen({ navigation }) {
           <TouchableOpacity
             style={styles.card}
             onPress={() =>
-              navigation.replace("ProductDetail", { product: item })
+              navigation.navigate("ProductDetail", { product: item })
             }
             activeOpacity={0.85}
           >
@@ -290,12 +290,16 @@ const styles = StyleSheet.create({
     shadowRadius: 6,
   },
   paymentOption: {
-  flexDirection: 'row', alignItems: 'center',
-  gap: 12, padding: 14,
-  borderRadius: 12, borderWidth: 1.5,
-  borderColor: '#4f46e5', backgroundColor: '#eef2ff',
-  marginBottom: 10,
-},
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12,
+    padding: 14,
+    borderRadius: 12,
+    borderWidth: 1.5,
+    borderColor: "#4f46e5",
+    backgroundColor: "#eef2ff",
+    marginBottom: 10,
+  },
   paymentDisabled: {
     borderColor: "#e2e8f0",
     backgroundColor: "#f8fafc",
