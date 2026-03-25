@@ -1,0 +1,29 @@
+{
+  "name": "fashionstore",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^15.1.1",
+    "@react-navigation/native": "^7.2.0",
+    "@react-navigation/stack": "^7.8.7",
+    "expo": "54.0.0",
+    "expo-asset": "~12.0.12",
+    "expo-font": "~14.0.11",
+    "expo-navigation-bar": "~5.0.10",
+    "expo-status-bar": "~2.2.3",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-immersive-mode": "^2.0.2",
+    "react-native-root-toast": "^4.0.1",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0",
+    "react-native-toast-message": "^2.2.0"
+  },
+  "private": true
+}
