@@ -76,4 +76,8 @@ Scan the QR code with Expo Go on Android or the default Camera app on iPhone.
 If you don't want to set up the environment, a screen recording is included
 in the repo showing the full flow from browsing to placing an order.
 
+---
 
+## APP RELEASE
+
+Fashion Store APK- https://drive.google.com/file/d/1WAx_d8wcYMR53f-8eCaiuvmu7vnpfSVp/view?usp=sharing
